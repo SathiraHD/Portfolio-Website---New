@@ -369,6 +369,22 @@
     justify-content: center;
     margin-bottom: 3rem;
   }
+
+  .hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .hero-profile-img {
+    max-width: 70%;
+    max-height: 400px;  /* Use a fixed max-height instead of percentage */
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
   
   .scroll-down {
     position: absolute;
@@ -539,9 +555,9 @@
   
   .about-image {
     position: relative;
-    width: auto;
+    width: 100%;
     max-width: 400px;
-    height: 100%;
+    height: auto;
     aspect-ratio: 1 / 1;
     margin: 0 auto;
     border-radius: var(--radius);
